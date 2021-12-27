@@ -15,6 +15,10 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     
 }
+
+
+
+
 #Q{
     background-color:lightcoral;
 }
@@ -22,10 +26,7 @@ button{
     background-color:rgb(151, 84, 84);
 
 }
-#Q:active{
-    background-color:rgb(255, 179, 179);
 
-}
 #W{    
     height: 475px;
     background-color: gold ;
@@ -34,10 +35,7 @@ button{
     background-color: rgb(151, 129, 0);
 
 }
-#W:active{
-    background-color:rgb(255, 234, 115);
 
-}
 #E{
     height: 450px;
     background-color: yellow;
@@ -46,9 +44,7 @@ button{
 #E:hover{
     background-color: rgb(153, 153, 0);
 }
-#E:active{
-    background-color: rgb(255, 255, 101);
-}
+
 
 #R{
     height: 425px;
@@ -59,10 +55,7 @@ button{
 #R:hover{
     background-color: rgb(48, 148, 48);
 }
-#R:active{
-    background-color: rgb(152, 255, 152);
 
-}
 
 
 #T{
@@ -73,10 +66,7 @@ button{
 #T:hover{
     background-color: rgb(54, 184, 236);
 }
-#T:active{
-    background-color: rgb(171, 219, 238);
 
-}
 
 
 #Y{
@@ -88,10 +78,7 @@ button{
     background-color: rgb(88, 29, 117);
 
 }
-#Y:active{
-    background-color: rgb(190, 61, 255);
 
-}
 
 
 #H{
@@ -104,9 +91,7 @@ button{
     background-color: rgb(241, 58, 241);
 
 }
-#H:active{
-    background-color: rgb(251, 200, 251);
-}
+
 
 
 #J{
@@ -118,10 +103,7 @@ button{
     background-color:rgb(151, 84, 84);
 
 }
-#J:active{
-    background-color:rgb(255, 179, 179);
 
-}
 #K{
     height: 300px;
     background-color: gold;
@@ -132,9 +114,7 @@ button{
 
 
 }
-#K:active{
-    background-color:rgb(255, 234, 115);
-}
+
 
 
 #L{
@@ -145,10 +125,7 @@ button{
     background-color: rgb(153, 153, 0);
 
 }
-#L:active{
-    background-color: rgb(255, 255, 101);
 
-}
 
 
 
@@ -161,10 +138,7 @@ button{
     background-color: rgb(48, 148, 48);
 
 }
-#B:active{
-    background-color: rgb(152, 255, 152);
 
-}
 #N{
     height: 225px;
     background-color: skyblue;
@@ -174,10 +148,7 @@ button{
     background-color: rgb(54, 184, 236);
 
 }
-#N:active{
-    background-color: rgb(171, 219, 238);
 
-}
 #M{
     height: 200px;
     background-color: darkorchid;
@@ -187,7 +158,10 @@ button{
     background-color: rgb(88, 29, 117);
 
 }
-#M:active{
-    background-color: rgb(190, 61, 255);
 
+
+
+.pressed{
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
 }

@@ -23,20 +23,14 @@ function playSound(WAVfile) {
 function keyClickEvent(key, WAVfile) {
     key.addEventListener("click", function () {
         playSound(WAVfile);
+        buttonAnimation(key);
     })
 }
 
-function keyPress(key,WAVfile,originalColor, activeColor) {
-    const delayInMilliseconds = 250; //1 second
-    let sheet = document.createElement('style')
-    sheet.innerHTML = `#${key} {background-color:${activeColor};}`;
-    document.body.appendChild(sheet);
+function keyPressEvent(key, WAVfile){
     playSound(WAVfile);
-    setTimeout(function () {
-       // let sheet = document.createElement('style')
-        sheet.innerHTML = `#${key} {background-color:${originalColor};}`;
-        document.body.appendChild(sheet);
-    }, delayInMilliseconds);
+    buttonAnimation(key);
+
 }
 
 
@@ -66,80 +60,95 @@ document.onkeydown = function (e) {
         // When Q or q is pressed
         case "q":
         case "Q":
-            //playSound("sounds/C1.wav");
-            keyPress("Q","sounds/C1.wav","lightcoral","rgb(255, 179, 179)");
+            // playSound("sounds/C1.wav");
+            // buttonAnimation(Q);
+            keyPressEvent(Q,"sounds/C1.wav")
+
             break;
 
         // When W or w is pressed
         case "w":
         case "W":
-            playSound("sounds/D1.wav");
+            keyPressEvent(W, "sounds/D1.wav");
             break;
 
         case "e":
         case "E":
-            playSound("sounds/E1.wav");
+            keyPressEvent(E, "sounds/E1.wav");
             break;
 
         // When R or r is pressed
         case "r":
         case "R":
-            playSound("sounds/F1.wav");
+            keyPressEvent(R, "sounds/F1.wav");
             break;
 
         // When T or t is pressed
         case "t":
         case "T":
-            playSound("sounds/G1.wav");
+            keyPressEvent(T, "sounds/G1.wav");
             break;
 
         // When Y or y is pressed
         case "y":
         case "Y":
-            playSound("sounds/A1.wav");
+            keyPressEvent(Y, "sounds/A1.wav");
             break;
 
         // When H or h is pressed
         case "h":
         case "H":
-            playSound("sounds/B1.wav");
+            keyPressEvent(H,"sounds/B1.wav");
             break;
 
         // When J or j is pressed
         case "j":
         case "J":
-            playSound("sounds/C5.wav");
+            keyPressEvent(J, "sounds/C5.wav");
             break;
 
         // When K or k is pressed
         case "k":
         case "K":
-            playSound("sounds/D5.wav");
+            keyPressEvent(K, "sounds/D5.wav");
             break;
 
         // When L or l is pressed
         case "l":
         case "L":
-            playSound("sounds/E5.wav");
+            keyPressEvent(L, "sounds/E5.wav");
             break;
 
         // When B or b is pressed
         case "b":
         case "B":
-            playSound("sounds/F5.wav");
+            keyPressEvent(B, "sounds/F5.wav");
             break;
 
         // When N or n is pressed
         case "n":
         case "N":
-            playSound("sounds/G5.wav");
+            keyPressEvent(N,"sounds/G5.wav");
             break;
 
         // When M or m is pressed
         case "m":
         case "M":
-            playSound("sounds/A5.wav");
+            keyPressEvent(M, "sounds/A5.wav");
             break;
     }
+
+}
+
+
+function buttonAnimation(currentKey){
+    // let activeBtn = document.querySelector("#"+currentKey); 
+
+    currentKey.classList.add("pressed");
+    currentKey.classList.add("pressed");
+    setTimeout(function(){
+        currentKey.classList.remove("pressed");
+
+    }, 100);
 
 }
