@@ -13,7 +13,6 @@
 //  T => G1
 //  N => G5
 
-
 function playSound(WAVfile) {
     let audio = new Audio(WAVfile);
     audio.play();
