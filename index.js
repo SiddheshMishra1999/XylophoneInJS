@@ -26,6 +26,21 @@ function keyClickEvent(key, WAVfile) {
     })
 }
 
+function keyPress(key,WAVfile,originalColor, activeColor) {
+    const delayInMilliseconds = 250; //1 second
+    let sheet = document.createElement('style')
+    sheet.innerHTML = `#${key} {background-color:${activeColor};}`;
+    document.body.appendChild(sheet);
+    playSound(WAVfile);
+    setTimeout(function () {
+       // let sheet = document.createElement('style')
+        sheet.innerHTML = `#${key} {background-color:${originalColor};}`;
+        document.body.appendChild(sheet);
+    }, delayInMilliseconds);
+}
+
+
+
 
 //Every key has same name as HTML ID, so there is no need for 
 //document.getElementById()
@@ -51,7 +66,8 @@ document.onkeydown = function (e) {
         // When Q or q is pressed
         case "q":
         case "Q":
-            playSound("sounds/C1.wav");
+            //playSound("sounds/C1.wav");
+            keyPress("Q","sounds/C1.wav","lightcoral","rgb(255, 179, 179)");
             break;
 
         // When W or w is pressed
