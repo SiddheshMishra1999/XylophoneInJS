@@ -20,4 +20,7 @@ Languages used:
 HTML, CSS, Javascript
 
 
+sound sources:
+https://www.noiiz.com/sounds/instruments/18
+
 keys: qwerty hjkl bnm
