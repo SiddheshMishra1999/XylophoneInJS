@@ -18,38 +18,108 @@ button{
 #Q{
     background-color:lightcoral;
 }
+#Q:hover{
+    background-color:rgb(151, 84, 84);
+
+}
+#Q:active{
+    background-color:rgb(255, 179, 179);
+
+}
 #W{    
     height: 475px;
     background-color: gold ;
+}
+#W:hover{
+    background-color: rgb(151, 129, 0);
+
+}
+#W:active{
+    background-color:rgb(255, 234, 115);
+
 }
 #E{
     height: 450px;
     background-color: yellow;
 
 }
+#E:hover{
+    background-color: rgb(153, 153, 0);
+}
+#E:active{
+    background-color: rgb(255, 255, 101);
+}
+
 #R{
     height: 425px;
     background-color: rgb(77, 250, 77);
 
 }
+
+#R:hover{
+    background-color: rgb(48, 148, 48);
+}
+#R:active{
+    background-color: rgb(152, 255, 152);
+
+}
+
+
 #T{
     height: 400px;
     background-color: skyblue;
 
 }
+#T:hover{
+    background-color: rgb(54, 184, 236);
+}
+#T:active{
+    background-color: rgb(171, 219, 238);
+
+}
+
+
 #Y{
     height: 375px;
     background-color: darkorchid;
 
 }
+#Y:hover{
+    background-color: rgb(88, 29, 117);
+
+}
+#Y:active{
+    background-color: rgb(190, 61, 255);
+
+}
+
+
 #H{
     height: 350px;
     background-color: violet;
 
 }
+
+#H:hover{
+    background-color: rgb(241, 58, 241);
+
+}
+#H:active{
+    background-color: rgb(251, 200, 251);
+}
+
+
 #J{
     height: 325px;
     background-color: lightcoral;
+
+}
+#J:hover{
+    background-color:rgb(151, 84, 84);
+
+}
+#J:active{
+    background-color:rgb(255, 179, 179);
 
 }
 #K{
@@ -57,14 +127,42 @@ button{
     background-color: gold;
 
 }
+#K:hover{
+    background-color: rgb(151, 129, 0);
+
+
+}
+#K:active{
+    background-color:rgb(255, 234, 115);
+}
+
+
 #L{
     height: 275px;
     background-color: yellow;
+}
+#L:hover{
+    background-color: rgb(153, 153, 0);
 
 }
+#L:active{
+    background-color: rgb(255, 255, 101);
+
+}
+
+
+
 #B{
     height: 250px;
     background-color: rgb(77, 250, 77);
+
+}
+#B:hover{
+    background-color: rgb(48, 148, 48);
+
+}
+#B:active{
+    background-color: rgb(152, 255, 152);
 
 }
 #N{
@@ -72,8 +170,24 @@ button{
     background-color: skyblue;
 
 }
+#N:hover{
+    background-color: rgb(54, 184, 236);
+
+}
+#N:active{
+    background-color: rgb(171, 219, 238);
+
+}
 #M{
     height: 200px;
     background-color: darkorchid;
+
+}
+#M:hover{
+    background-color: rgb(88, 29, 117);
+
+}
+#M:active{
+    background-color: rgb(190, 61, 255);
 
 }
