@@ -14,3 +14,10 @@ DOD (Done of Done):
 - You can also press the button using your keyboard with its corresponding key
 - Each press or click of a button should play a unique Xylophone sound
 - Each button should have a label indicating which key is linked to it
+- The key binds are easy and comfortable to use
+
+Languages used: 
+HTML, CSS, Javascript
+
+
+keys: qwerty hjkl bnm
