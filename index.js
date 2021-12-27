@@ -140,15 +140,13 @@ document.onkeydown = function (e) {
 
 }
 
-
+// Gets the key being clicked or pressed and does the animation from the CSS class
 function buttonAnimation(currentKey){
-    // let activeBtn = document.querySelector("#"+currentKey); 
-
-    currentKey.classList.add("pressed");
+    const delay = 100;
     currentKey.classList.add("pressed");
     setTimeout(function(){
         currentKey.classList.remove("pressed");
 
-    }, 100);
+    }, delay);
 
 }

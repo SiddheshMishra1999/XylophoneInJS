@@ -21,6 +21,6 @@ HTML, CSS, Javascript
 
 
 sound sources:
-https://www.noiiz.com/sounds/instruments/18
+https://bedroomproducersblog.com/2011/07/01/goldbaby-releases-hapi-vs-xylophone/
 
 keys: qwerty hjkl bnm
