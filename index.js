@@ -9,6 +9,8 @@ const E = document.getElementById("E"); //E1
 const L = document.getElementById("L"); //E5
 const R = document.getElementById("R"); //F1
 const B = document.getElementById("B"); //F5
+const T = document.getElementById("T"); //G1
+const N = document.getElementById("N"); //G5
 
 
 function playSound(WAVfile) {
