@@ -18,73 +18,30 @@ function playSound(WAVfile) {
     audio.play();
 }
 
-Q.addEventListener("click",function(){
-    console.log("C1 clicked");
-    playSound("sounds/C1.wav");
+//Adds an event listener for a button
+function keyClickEvent(key,WAVfile) {
+    key.addEventListener("click",function(){
+        playSound(WAVfile);
+    })
+}
 
-})
-W.addEventListener("click",function(){
-    console.log("D1 clicked");
-    playSound("sounds/D1.wav");
-
-})
-E.addEventListener("click",function(){
-    console.log("E1 clicked");
-    playSound("sounds/E1.wav");
-
-})
-R.addEventListener("click",function(){
-    console.log("F1 clicked");
-    playSound("sounds/F1.wav");
-})
-T.addEventListener("click",function(){
-    console.log("G1 clicked");
-    playSound("sounds/G1.wav");
-
-})
-Y.addEventListener("click",function(){
-    console.log("A1 clicked");
-    playSound("sounds/A1.wav");
-
-})
-H.addEventListener("click",function(){
-    console.log("B1 clicked");
-    playSound("sounds/B1.wav");
-
-})
-J.addEventListener("click",function(){
-    console.log("C5 clicked");
-    playSound("sounds/C5.wav");
-
-})
-K.addEventListener("click",function(){
-    console.log("D5 clicked");
-    playSound("sounds/D5.wav");
-
-})
-L.addEventListener("click",function(){
-    console.log("E5 clicked");
-    playSound("sounds/E5.wav");
-
-})
-B.addEventListener("click",function(){
-    console.log("F5 clicked");
-    playSound("sounds/F5.wav");
-
-})
-N.addEventListener("click",function(){
-    console.log("G5 clicked");
-    playSound("sounds/G5.wav");
-
-})
-M.addEventListener("click",function(){
-    console.log("A5 clicked");
-    playSound("sounds/A5.wav");
-
-})
+keyClickEvent(Q,"sounds/C1.wav");
+keyClickEvent(W,"sounds/D1.wav");
+keyClickEvent(E,"sounds/E1.wav");
+keyClickEvent(R,"sounds/F1.wav");
+keyClickEvent(T,"sounds/G1.wav");
+keyClickEvent(Y,"sounds/A1.wav");
+keyClickEvent(H,"sounds/B1.wav");
+keyClickEvent(J,"sounds/C5.wav");
+keyClickEvent(K,"sounds/D5.wav");
+keyClickEvent(L,"sounds/E5.wav");
+keyClickEvent(B,"sounds/F5.wav");
+keyClickEvent(N,"sounds/G5.wav");
+keyClickEvent(M,"sounds/A5.wav");
 
 
 
+//Switch statement for each keypress
 document.onkeydown = function(e){
     switch(e.key){
 
