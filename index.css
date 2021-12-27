@@ -2,9 +2,8 @@ body{
     margin-top: 20px;
     background-image: url(Images/musicBack.png);
     text-align: center;
-
-    
 }
+
 button{
     margin-top: 100px;
     border: none;
@@ -15,15 +14,9 @@ button{
     width: 7%;
     font-family: Arial, Helvetica, sans-serif;
     color:white;
-
     box-shadow: 5px 5px black;
-
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    
 }
-
-
-
 
 #Q{
     background-color:lightcoral;
@@ -51,7 +44,6 @@ button{
     background-color: rgb(153, 153, 0);
 }
 
-
 #R{
     height: 425px;
     background-color: rgb(77, 250, 77);
@@ -62,8 +54,6 @@ button{
     background-color: rgb(48, 148, 48);
 }
 
-
-
 #T{
     height: 400px;
     background-color: skyblue;
@@ -72,8 +62,6 @@ button{
 #T:hover{
     background-color: rgb(54, 184, 236);
 }
-
-
 
 #Y{
     height: 375px;
@@ -85,8 +73,6 @@ button{
 
 }
 
-
-
 #H{
     height: 350px;
     background-color: violet;
@@ -97,8 +83,6 @@ button{
     background-color: rgb(241, 58, 241);
 
 }
-
-
 
 #J{
     height: 325px;
@@ -121,8 +105,6 @@ button{
 
 }
 
-
-
 #L{
     height: 275px;
     background-color: yellow;
@@ -131,9 +113,6 @@ button{
     background-color: rgb(153, 153, 0);
 
 }
-
-
-
 
 #B{
     height: 250px;
@@ -164,8 +143,6 @@ button{
     background-color: rgb(88, 29, 117);
 
 }
-
-
 
 .pressed{
     box-shadow: 0 3px 4px 0 #DBEDF3;

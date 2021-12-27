@@ -27,14 +27,19 @@ function keyClickEvent(key, WAVfile) {
     })
 }
 
-function keyPressEvent(key, WAVfile){
+function keyPressEvent(key, WAVfile) {
     playSound(WAVfile);
     buttonAnimation(key);
-
 }
 
-
-
+// Gets the key being clicked or pressed and does the animation from the CSS class
+function buttonAnimation(currentKey) {
+    const delay = 100;
+    currentKey.classList.add("pressed");
+    setTimeout(function () {
+        currentKey.classList.remove("pressed");
+    }, delay);
+}
 
 //Every key has same name as HTML ID, so there is no need for 
 //document.getElementById()
@@ -62,7 +67,7 @@ document.onkeydown = function (e) {
         case "Q":
             // playSound("sounds/C1.wav");
             // buttonAnimation(Q);
-            keyPressEvent(Q,"sounds/C1.wav")
+            keyPressEvent(Q, "sounds/C1.wav")
 
             break;
 
@@ -98,7 +103,7 @@ document.onkeydown = function (e) {
         // When H or h is pressed
         case "h":
         case "H":
-            keyPressEvent(H,"sounds/B1.wav");
+            keyPressEvent(H, "sounds/B1.wav");
             break;
 
         // When J or j is pressed
@@ -128,7 +133,7 @@ document.onkeydown = function (e) {
         // When N or n is pressed
         case "n":
         case "N":
-            keyPressEvent(N,"sounds/G5.wav");
+            keyPressEvent(N, "sounds/G5.wav");
             break;
 
         // When M or m is pressed
@@ -137,16 +142,5 @@ document.onkeydown = function (e) {
             keyPressEvent(M, "sounds/A5.wav");
             break;
     }
-
-}
-
-// Gets the key being clicked or pressed and does the animation from the CSS class
-function buttonAnimation(currentKey){
-    const delay = 100;
-    currentKey.classList.add("pressed");
-    setTimeout(function(){
-        currentKey.classList.remove("pressed");
-
-    }, delay);
 
 }
